@@ -5586,3 +5586,30 @@ html.is-reveal-open {
       display: block !important; } }
 
 /*# sourceMappingURL=foundation.css.map */
+
+#headings {
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.resume-topics {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
