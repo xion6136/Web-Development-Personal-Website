@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <!-- main content within a `grid-container` -->
+    <div class="grid-container">
+        <!-- `grid-x` represents a row -->
+        <div id="headings" class="grid-x grid-padding-x show-for-medium">
+            <div style="border: 1px solid" class="cell small-3 "><a href="index.html">Home</a></div>
+            <div style="border: 1px solid" class="cell small-3 "><a href="projects.html">Projects</a></div>
+            <div style="border: 1px solid" class="cell small-3 "><a href="resume.html">Resume</a></div>
+            <div style="border: 1px solid" class="cell small-3 "><a href="">Fun Fact</a></div>
+        </div>  
+        
+       <!-- <div class="grid-x grid-padding-x">
+            <div class="cell small-4"><img src=" " alt="Headshot picture"></div>
+            <div id="intro" class="cell small-8">Hello and welcome to my Website. My name is Owen Xiong and I am a Senior studying 
+                here at the University of St. Thomas. I am majoring in Computer Science and hopefully after this semester I can 
+                get a job offering of my liking.
+            </div>
+        </div> 
+
+        <div class="grid-y grid-padding-y show-for-medium">
+            <div class="cell auto"><img src="UST.jpeg" alt="UST picture"></div>
+        </div> -->
+
+    </div>
+
+
+    <div class="off-canvas-wrapper hide-for-medium">
+        <!-- Your menu or Off-canvas content goes here -->
+         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul id="headings" class="vertical menu">
+                <li style="border: 1px solid"><a href="index.html">Home</a></li>
+                <li style="border: 1px solid"><a href="projects.html">Projects</a></li>
+                <li style="border: 1px solid"><a href="resume.html">Resume</a></li>
+                <li style="border: 1px solid"><a href="#">Fun Fact</a></li>
+    
+            </ul>
+        </div>
+
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+            </div> 
+        </div>
+     </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
