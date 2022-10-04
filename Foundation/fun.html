@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <!-- main content within a `grid-container` -->
+    <div class="grid-container">
+        <!-- `grid-x` represents a row -->
+        <div id="headings" class="grid-x grid-padding-x show-for-medium">
+            <div style="border: 1px solid" class="cell small-3 "><a href="index.html">Home</a></div>
+            <div style="border: 1px solid" class="cell small-3 "><a href="projects.html">Projects</a></div>
+            <div style="border: 1px solid" class="cell small-3 "><a href="resume.html">Resume</a></div>
+            <div style="border: 1px solid" class="cell small-3 "><a href="fun.html">Fun Fact</a></div>
+        </div> 
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-7"><img src="chamber.jpg" alt="Chamber"></div>
+            <div class="cell large-auto">
+                <p style="font-size: 2rem;">
+                    <span id="subjects">Fun Fact:</span></br>
+                    I enjoy playing video games and recently I got into Valorant, a first-person tatical shooting game. The game character
+                    in this image is favorite character to play in Valorant and he's called Chamber.
+                </p>
+            </div>
+        </div>  
+
+        <div class="grid-x grid-padding-x">
+            <div style="text-align: center;" id="subjects" class="cell large-auto">Another Fun Fact About Me:</div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="cell large-7"><img src="gym.jpg" alt="Gym"></div>
+            <div class="cell large-auto">
+                <p style="font-size: 2rem;">
+                    I enjoy working out and releasing stress by going to the Gym. I especially enjoy resistance training but hate cardio. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="off-canvas-wrapper hide-for-medium">
+        <!-- Your menu or Off-canvas content goes here -->
+         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul id="headings" class="vertical menu">
+                <li style="border: 1px solid"><a href="index.html">Home</a></li>
+                <li style="border: 1px solid"><a href="projects.html">Projects</a></li>
+                <li style="border: 1px solid"><a href="resume.html">Resume</a></li>
+                <li style="border: 1px solid"><a href="fun.html">Fun Fact</a></li>
+    
+            </ul>
+        </div>
+
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="grid-x grid-padding-x">
+                <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
+            </div> 
+        </div>
+     </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
